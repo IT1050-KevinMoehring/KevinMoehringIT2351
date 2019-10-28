@@ -1,2 +1,39 @@
-# Executive Summary
+# KevinMoehringIT2351
 
+# Executive Summary
+Lab3Part1 consisted of creating an EER diagram and connecting the relationships within the 7 tables of the Northwind database.
+This consisted of find each primary key and all of the linked foreign keys and creating a bridge between the two.
+Lab3Part2 involved normalizing a set of given data. The though process being eliminating repeating data, creating data integrity,
+and creating tables for each independent piece of data. This is relatively intuitive, but I required outside assistence to reach
+the end goal of 3NF.
+Lab3Part3 involved creating a new database for the now normalized dataset that was provided in Lab3Par2. After creating the 4
+new tables, another EER diagram was created in the same process as in Lab3Part1. I mistakenly created the new tables within Northwind.
+Lab3Part4 involved using the "forward engineer" option to export the script containing the newly created StudentData database, although
+in my case it just exported the 4 tables that were created in the existing Northwind database.
+Lab3Part5 involved creating an index called "Zipindex" which consisted of the PostalCode filed within the customers table of Northwind.
+Lab3Part6 served very problematic. The goal was to create a view titled "vwCustomerOrders" using several different columns from 4 of
+the tables within Northwind. I believe the problem I was running into was related to the join type function that I was using, but 
+after several hours of tinkering, I decided to move on.
+Lab3Part7 involved creating a view using the new StudentData tables (again, in my case, still within Northwind). The view was
+successfully created although not without hiccups. The script could only be run if I avoided the 'StudentID' columns of the 
+joined tables in the SELECT statement which would result in an 'ambiguous' error message.
+
+# Normalization
+Normalization, specifically getting to 3NF is essential to database maintenance. 1NF consists of the following: each cell contains a
+single value and each record is to be unique. 2NF meets the requirements for 1NF and also have single solumn primary keys. This
+usually consists of making additional tables for what would otherwise need to be composite keys. An example being Names and creating
+a Name table consisting of the Names as well as a 'NameID' column. 3NF meets the conditions for both 1NF and 2NF but also has no
+transitive functional dependency. This, in short, means that there is no repeating data wherever possible, and that non-primary and
+non-foreign keys only show up in tables once. The 4 tables created are done so in order to accomplish a 3rd degree of normalization.
+
+# Lab3Part6 Discussion
+Creating views can be very important in the business world. Creating effective views can save time and increase accuracy of
+common datasets that data scientists will pull from. These views are stored within the database without adding new tables which
+would derail data integrity and damage normalization. This saves time by allowing a user to call upon a view instead of having to
+write a potentially lengthy and error-prone Select(join) statement each time they go to parse through that particular set of data.
+
+# Conclusion
+Lab3 consisted largely of creating databases, views, and EER diagrams. More generally, it involved manipulating and/or changing the
+way by which users can use or call upon data within a database. The lab also served as an introduction to how the links within tables
+of a database are all connected and how to connect them at a basic level. Creating views is a sore spot that will have to be reviewed
+in the coming weeks in order to ensure confidence in the subject.
