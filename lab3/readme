@@ -1,6 +1,7 @@
 # KevinMoehringIT2351
 
 # Executive Summary
+
 Lab3Part1 consisted of creating an EER diagram and connecting the relationships within the 7 tables of the Northwind database.
 This consisted of find each primary key and all of the linked foreign keys and creating a bridge between the two.
 Lab3Part2 involved normalizing a set of given data. The though process being eliminating repeating data, creating data integrity,
@@ -18,7 +19,9 @@ Lab3Part7 involved creating a view using the new StudentData tables (again, in m
 successfully created although not without hiccups. The script could only be run if I avoided the 'StudentID' columns of the 
 joined tables in the SELECT statement which would result in an 'ambiguous' error message.
 
+
 # Normalization
+
 Normalization, specifically getting to 3NF is essential to database maintenance. 1NF consists of the following: each cell contains a
 single value and each record is to be unique. 2NF meets the requirements for 1NF and also have single solumn primary keys. This
 usually consists of making additional tables for what would otherwise need to be composite keys. An example being Names and creating
@@ -26,13 +29,17 @@ a Name table consisting of the Names as well as a 'NameID' column. 3NF meets the
 transitive functional dependency. This, in short, means that there is no repeating data wherever possible, and that non-primary and
 non-foreign keys only show up in tables once. The 4 tables created are done so in order to accomplish a 3rd degree of normalization.
 
+
 # Lab3Part6 Discussion
+
 Creating views can be very important in the business world. Creating effective views can save time and increase accuracy of
 common datasets that data scientists will pull from. These views are stored within the database without adding new tables which
 would derail data integrity and damage normalization. This saves time by allowing a user to call upon a view instead of having to
 write a potentially lengthy and error-prone Select(join) statement each time they go to parse through that particular set of data.
 
+
 # Conclusion
+
 Lab3 consisted largely of creating databases, views, and EER diagrams. More generally, it involved manipulating and/or changing the
 way by which users can use or call upon data within a database. The lab also served as an introduction to how the links within tables
 of a database are all connected and how to connect them at a basic level. Creating views is a sore spot that will have to be reviewed
