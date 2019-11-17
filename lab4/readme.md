@@ -1,1 +1,11 @@
-#header
+#Executive Summary
+
+Lab4Part2 was done by starting with the select statement and coming to the correct statement, and only then inserting it into the procedure syntax between 'begin' & 'end'. And then calling the newly performed test. There is a syntax error on Line 13 for end// that I could not sort out. I will need follow-up to understand where I went wrong.
+Lab4Part3 was done in a similar fashion and yielded the same error in syntax on end// on line 17.
+Lab4Part4 was a difficult question to conceptualize and I went to the student help forum on blackboard for assistance. It helped me understand the syntax of procedures a bit more, but the remaining questions still proved difficult. To do this question i becane by writing the delete statement hat would be run by the procedure, then set it into the procedure syntax, and lastly wrote the select statements for each respective outcomes.
+Lab4Part5 has the same end// syntax error on line13. I began the question by writing the insert statement and proceeded to place that block of code into the procedure syntax.
+Lab4Part6 began with the select statement for calculating the discounted UnitPrice from order_details. Afterwards, the block of code was inserted into the procedure syntax. Although there was an error code on line11 that I am unsure of as why it is occuring. I then finished by writing the messages for how the code had been executed. This portion had no error in the end// syntax.
+Lab4Part7 was troublesome, and I need some follow-up as to how to write triggers. I began with the select statement and IF() statement then attempted to create the trigger, but I know I am missing a core portion of the problem, but could not figure out how to correct it.
+
+#Conclusion
+This lab was regarding creating procedures and triggers in SQL to be used at a later time. Lab 4 was very difficult and demoralizing for me. I feel that I am missing a core concept in creating triggers and procedures. While this happens throughout the course of learning a language, I found it impossible to resolve the issues that I was facing. I will need a large amount of feedback to correct the holes in my code from this lab. If at all possible, can you shed some insight as to where I may have gone wrong on creating procedures?
